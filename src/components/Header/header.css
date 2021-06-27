@@ -1,0 +1,35 @@
+.header {
+    max-width: 100%;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../../img/sud.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .header__menu {
+    width: 80%;
+    padding: 0 0 24px;
+  }
+  .header__items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__item {
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 22px;
+    text-decoration: none;
+    /* min-width: 150px; */
+    /* padding: 17px; */
+    color: #ffffff;
+  }
+  .header__info {
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.713);
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  }

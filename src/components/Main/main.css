@@ -1,0 +1,19 @@
+.main {
+  max-width: 1000px;
+  margin: 20px auto;
+
+  width: 100%;
+  list-style: none;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    max-width: 100%;
+    flex-direction: column;
+  }
+}

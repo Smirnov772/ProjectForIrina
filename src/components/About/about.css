@@ -1,0 +1,147 @@
+.about {
+  /* padding-right: 48px; */
+  display: grid;
+  grid-template-areas:
+    "photo about about about"
+    "photo work work work ";
+  grid-template-rows: 1fr 1fr;
+  /* grid-column-gap: 48px; */
+  align-items: center;
+  justify-content: center;
+}
+.about__photo {
+  grid-area: photo;
+}
+.about-titles {
+  height: 100%;
+
+  padding: 0px 48px 0px 48px;
+  grid-area: about;
+  display: grid;
+  justify-self: auto;
+  align-items: center;
+}
+.about__title {
+  margin: 0;
+  font-size: 23px;
+  text-shadow: 1px 1px 0px ghostwhite;
+  color: saddlebrown;
+  font-weight: bold;
+}
+.about__subtitle {
+  margin: 0;
+  font-size: 18px;
+  float: left;
+  font-style: italic;
+  color: saddlebrown;
+}
+
+.work-info {
+  padding: 0px 48px 0px 48px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  justify-content: space-around;
+}
+.work-info__items {
+  grid-area: work;
+}
+.work-info__link {
+  padding-bottom: 15px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-column-gap: 10px;
+  align-items: center;
+  margin: 0;
+  color: saddlebrown;
+  font-weight: 700;
+}
+.link {
+}
+
+.work-info__link img {
+  width: 48px;
+}
+.content {
+}
+.footer {
+  grid-area: footer;
+}
+@media screen and (max-width: 900px) {
+  .work-info {
+    padding: 10px 24px 0px 24px;
+
+    /* grid-template-columns: repeat(auto-fill, 212px); */
+  }
+
+  .work-info__link {
+    font-size: smaller;
+  }
+  .about-titles {
+    padding: 0px 24px 0px 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__photo {
+    width: 100%;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .header__menu {
+    display: none;
+  }
+  .work-info {
+    /* display: none; */
+    padding: 10px 50px 0px 50px;
+  }
+  .header {
+    padding: 28px 0px 28px 0;
+  }
+  .about {
+    grid-template-areas:
+      "photo about"
+      "work work";
+    padding-right: 0;
+    grid-template-rows: 1fr min-content;
+    grid-template-columns: 1fr 2fr;
+  }
+  .about-titles {
+    height: 100%;
+    padding: 0px 24px 0px 24px;
+  }
+  .about__title {
+    margin: 0;
+    font-size: 20px;
+  }
+  .about__subtitle {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .work-info__link {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about__title {
+    font-size: 16px;
+  }
+  .about__subtitle {
+    font-size: 12px;
+  }
+  .work-info__link img {
+    width: 18px;
+  }
+  .work-info__link {
+    padding: 0;
+  }
+  .work-info {
+    padding: 10px 0px;
+    grid-template-columns: repeat(auto-fill, 212px);
+    justify-content: end;
+  }
+}
