@@ -1,0 +1,13 @@
+.navigation__link {
+    display: inline-block;
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 17px;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .navigation__link {
+    display: none;
+  }
+}

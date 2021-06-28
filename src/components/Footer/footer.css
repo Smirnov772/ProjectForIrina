@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    background: rgb(74, 31, 1);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-info__paragraph {
+  color: white;
+}
+.footer-info__link {
+  color: white;
+}
+.footer-info__items{
+    padding: 20px;
+}
